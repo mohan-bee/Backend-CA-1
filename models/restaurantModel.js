@@ -10,10 +10,10 @@ const restaurantSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    itemsArr: {
-        type: [mongoose.Schema.Types.ObjectId],
+    itemsArr: [{
+        type: mongoose.Schema.Types.ObjectId,
         ref: Item
-    }
+    }]
 })
 
 
